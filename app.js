@@ -11,14 +11,11 @@ let questionArray = ["a profession", "an adjective", "a boy's name", "an animal 
 let questionCounter = 0;
 
 for(let i = numberOfQuestions; i > 0; i--){
-    console.log('questionCounter:' + questionCounter);
-    console.log('Enter ' + questionArray[questionCounter]);
-    console.log('i: ' + i);
-    
     numberOfQuestions--;
-    console.log(`You have ${numberOfQuestions} questions left`);
+    const questionPrompt = prompt(`Enter ${questionArray[questionCounter]}
 
-    
+(You have ${numberOfQuestions} questions left)`); 
+    userInputs.push(questionPrompt);
     questionCounter++;
 }
 
